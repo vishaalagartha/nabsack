@@ -1,0 +1,6 @@
+.ipynb_checkpoints/*
+.venv/*
+python/*
+*.zip
+*.csv
+*.ipynb
