@@ -9,7 +9,7 @@ const Solution = ({ solution, amount, points }) => {
           return <Player key={i} name={p} selected={true} optimal={true} />
         })}
       </Row>
-      <h3>Optimal number of points: {solution.profit}. You were off by {(solution.profit - points).toFixed(2)}.</h3>
+      <h3>Optimal number of points: {(solution.profit).toFixed(2)}. You were off by {(solution.profit - points).toFixed(2)}.</h3>
       <h3>Optimal solution costs ${solution.cost.toLocaleString()}</h3>
     </div>
   )

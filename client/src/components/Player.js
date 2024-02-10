@@ -3,7 +3,8 @@ import { PLAYER_TO_ID } from "../utils/constants"
 import './Player.css'
 
 const Player = ({ name, cost, profit, selected, onClick, idx, optimal, showSolution }) => {
-  const id = PLAYER_TO_ID[name]
+  const fixedName = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+  const id = PLAYER_TO_ID[fixedName]
   const src = `https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/${id}.png`
 
   let className = "player"
