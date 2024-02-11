@@ -83,6 +83,7 @@ const App = () => {
       <Alert variant={'danger'} show={showError} transition={true} className="text-center">Insufficient Funds!</Alert>
       <div className="my-10">
         <div className="text-center">
+          <p>Click on individual players to accumulate points. Try to maximize your points while staying under the cap.</p>
           <h2>${amount.toLocaleString()} Remaining</h2>
           <h2>+ {points} Accumulated</h2>
           <Row className="justify-center m-5">
