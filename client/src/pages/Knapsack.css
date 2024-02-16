@@ -1,0 +1,9 @@
+.instructions-button {
+  font-size: 20px!important;
+  min-height: 50px!important;
+  min-width: 50px!important;
+  border-radius: 50%!important;
+  font-weight: 900;
+  border: solid 2px!important;
+  margin-right: 50px;
+}

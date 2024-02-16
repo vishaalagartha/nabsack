@@ -1,0 +1,33 @@
+.player-bfs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 3px grey;
+  border-radius: 30%;
+  background-color: whitesmoke;
+  color: black;
+  padding: 10px 20px 20px 20px;
+}
+
+.vl {
+  border-left: 10px solid green;
+  height: 20px;
+}
+
+.arrow {
+  margin: auto;
+}
+
+.arrow:after {
+  content: "";
+  display: inline-block !important;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid green;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+svg {
+  font-size: x-large;
+}

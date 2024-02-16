@@ -3,4 +3,10 @@
 python/*
 *.zip
 *.csv
+*.json
 *.ipynb
+
+teams/*
+
+.DS_Store
+
