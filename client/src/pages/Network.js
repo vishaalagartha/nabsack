@@ -153,14 +153,17 @@ const Network = () => {
           </Form>
         </Col>
       </Row>
-      <ForceGraph3D 
-        ref={fgRef}
-        nodeColor={() => "#0087FB"}
-        cooldownTicks={100} 
-        d3AlphaDecay={0.05} 
-        graphData={graphData} 
-        nodeLabel={({ id }) => playerMap[id]} 
-      />
+      <Row style={{ marginLeft: 50 }}>
+        <ForceGraph3D 
+          ref={fgRef}
+          width={window.innerWidth - 100}
+          nodeColor={() => "#0087FB"}
+          cooldownTicks={100} 
+          d3AlphaDecay={0.05} 
+          graphData={graphData} 
+          nodeLabel={({ id }) => playerMap[id]} 
+        />
+      </Row>
     </div>
   )
 }
