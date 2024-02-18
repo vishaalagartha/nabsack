@@ -3,6 +3,7 @@ import { Row, Col, Image } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 import BFS from '../assets/bfs.png'
 import Knapsack from '../assets/knapsack.png'
+import Network from '../assets/network.png'
 
 
 const App = () => {
@@ -23,6 +24,14 @@ const App = () => {
           <Image src={Knapsack} width={300}>
           </Image>
           <div>Find the shortest path between two players.</div>
+        </div>
+      </Col>
+      <Col xs={{ span: 4 }}>
+        <div className="app-box" onClick={() => navigate('/network')}>
+          <h3>The NBA Network</h3>
+          <Image src={Network} width={300}>
+          </Image>
+          <div>Visualize the network of NBA players</div>
         </div>
       </Col>
     </Row>
