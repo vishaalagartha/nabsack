@@ -6,7 +6,6 @@ import BFSInstructionsModal from './bfs/BFSInstructionsModal'
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false)
-  console.log(window.location)
 
   return (
     <div>
@@ -26,11 +25,8 @@ const Header = () => {
           ?
         </Button>
       </Navbar>
-      {window.location.pathname.includes('knapsack') ? 
-        <NabsackInstructionsModal showModal={showModal} setShowModal={setShowModal} />
-        :
-        <BFSInstructionsModal showModal={showModal} setShowModal={setShowModal} />
-      }
+      {window.location.pathname.includes('knapsack') && <NabsackInstructionsModal showModal={showModal} setShowModal={setShowModal} />}
+      {window.location.pathname.includes('bfs') && <BFSInstructionsModal showModal={showModal} setShowModal={setShowModal} />}
     </div>
   )
 }

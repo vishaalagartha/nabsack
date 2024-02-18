@@ -36,6 +36,7 @@ const BFS = () => {
     setSource(s)
     setDestination(d)
     setOptimalPath(p)
+  // eslint-disable-next-line
   }, [])
 
 
