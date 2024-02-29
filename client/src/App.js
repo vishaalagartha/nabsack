@@ -1,15 +1,30 @@
 import './App.css'
+import { ConfigProvider } from 'antd'
 import Header from './components/Header'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Knapsack from './pages/Knapsack'
 import BFS from './pages/BFS'
 import Network from './pages/Network'
+import Statstionary from './pages/Statstionary'
 
 
 const App = () => {
   return (
-    <div>
+    <ConfigProvider
+    theme={{
+      token: {
+        colorPrimary: '#0d6efd',
+      },
+      components: {
+        Collapse: {
+          headerBg: '#0d6efd',
+        },
+        Select: {
+          optionSelectedBg: '#0d6efd',
+        }
+      }
+    }}>
       <Header />
       <BrowserRouter>
         <Routes>
@@ -17,9 +32,10 @@ const App = () => {
           <Route Component={Network} path='/network' exact />
           <Route Component={Knapsack} path='/knapsack' exact />
           <Route Component={BFS} path='/bfs' exact />
+          <Route Component={Statstionary} path='/statstionary' exact />
         </Routes>
       </BrowserRouter>
-    </div>
+    </ConfigProvider>
   )
 }
 

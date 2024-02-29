@@ -1,0 +1,44 @@
+/* table */
+.ant-table {
+  font-size: 11px!important;
+  font-family: Verdana,sans-serif!important;
+  width: 100%;
+}
+
+/* row data */
+.ant-table-tbody > tr > td {
+  height: 5px!important;
+  padding: 4px 2px 4px 2px!important;
+  white-space:nowrap!important;
+  width: 10px!important;
+}
+
+/* row data */
+.ant-table-cell {
+  height: 5px!important;
+  padding: 4px 2px 4px 2px!important;
+  white-space:nowrap!important;
+  width: 10px!important;
+}
+
+
+
+.ant-table-thead > tr > th {
+  height: 5px!important;
+  padding: 2px!important;
+  color: #900!important;
+  font-size: 11px!important;
+  padding: 4px 2px 4px 2px!important;
+  white-space:nowrap!important;
+  width: 10px!important;
+}
+
+.ant-btn-primary:disabled {
+  background-color: #0d6efd;
+  opacity: 0.7!important;
+  color: white;
+}
+
+.ant-typography {
+  color: black;
+}
